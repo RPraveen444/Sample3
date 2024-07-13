@@ -16,6 +16,7 @@ public class Main {
         db_connection.getConnection();
 
         logger.info("Call the Service Class..");
+        logger.info("Call the Service Class..");
         UserApp userApp = new UserApp();
         userApp.start();
     }
