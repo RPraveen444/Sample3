@@ -1,0 +1,397 @@
+2024-07-07 14:42:36 INFO  org.example.Main - Program Streated..
+2024-07-07 14:43:59 INFO  org.example.Main - Program Streated..
+2024-07-07 14:44:00 INFO  org.example.Main - call the service class..
+2024-07-07 22:25:41 INFO  org.example.Main - Program Streated..
+2024-07-07 22:25:42 INFO  org.example.Main - Call the Service Class..
+2024-07-07 22:26:01 INFO  org.example.Main - Program Streated..
+2024-07-07 22:26:02 INFO  org.example.Main - Call the Service Class..
+2024-07-07 22:35:05 INFO  org.example.Main - Program Streated..
+2024-07-07 22:35:06 INFO  org.example.Main - Call the Service Class..
+2024-07-07 22:35:20 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-07 22:35:20 INFO  org.example.DAO.UserDAOImpl - User found: tm_raj
+2024-07-08 15:36:05 INFO  org.example.Main - Program Streated..
+2024-07-08 15:36:07 INFO  org.example.Main - Call the Service Class..
+2024-07-08 15:36:34 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: pm_xyz
+2024-07-08 15:36:35 INFO  org.example.DAO.UserDAOImpl - User found: pm_xyz
+2024-07-08 15:36:45 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: TeamMember
+2024-07-08 15:36:45 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-08 15:45:11 INFO  org.example.Main - Program Streated..
+2024-07-08 15:45:12 INFO  org.example.Main - Call the Service Class..
+2024-07-08 15:45:27 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: 1
+2024-07-08 15:45:27 WARN  org.example.DAO.UserDAOImpl - No user found with username: 1
+2024-07-08 15:45:41 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-08 15:45:41 INFO  org.example.DAO.UserDAOImpl - User found: tm_raj
+2024-07-08 15:48:10 INFO  org.example.Main - Program Streated..
+2024-07-08 15:48:11 INFO  org.example.Main - Call the Service Class..
+2024-07-08 15:48:25 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: pm_xyz
+2024-07-08 15:48:25 INFO  org.example.DAO.UserDAOImpl - User found: pm_xyz
+2024-07-08 15:50:14 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-08 15:50:14 INFO  org.example.DAO.UserDAOImpl - User found: tm_raj
+2024-07-08 15:55:04 INFO  org.example.Main - Program Streated..
+2024-07-08 15:55:05 INFO  org.example.Main - Call the Service Class..
+2024-07-08 15:55:17 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: admin
+2024-07-08 15:55:17 INFO  org.example.DAO.UserDAOImpl - User found: admin
+2024-07-08 15:55:22 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: TeamMember
+2024-07-08 15:55:22 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-08 22:21:07 INFO  org.example.DAO.UserDAOImpl - Attempting to register user with username: newUser
+2024-07-08 22:21:07 INFO  org.example.DAO.UserDAOImpl - Attempting to register user with username: newUser
+2024-07-08 22:28:20 INFO  org.example.DAO.UserDAOImpl - Attempting to register user with username: newUser
+2024-07-08 22:28:20 INFO  org.example.DAO.UserDAOImpl - Attempting to register user with username: newUser
+2024-07-08 22:28:55 INFO  org.example.DAO.UserDAOImpl - Attempting to register user with username: newUser
+2024-07-08 22:29:47 INFO  org.example.DAO.UserDAOImpl - Attempting to register user with username: newUser
+2024-07-08 22:31:19 INFO  org.example.DAO.UserDAOImpl - Attempting to register user with username: newUser
+2024-07-08 22:33:57 INFO  org.example.DAO.UserDAOImpl - Attempting to register user with username: newUser
+2024-07-08 22:33:58 INFO  org.example.DAO.UserDAOImpl - Rows inserted: 1
+2024-07-08 22:35:34 INFO  org.example.DAO.UserDAOImpl - Attempting to register user with username: newUser
+2024-07-08 22:35:34 ERROR org.example.DAO.UserDAOImpl - SQLException occurred while registering user: No operations allowed after connection closed.
+java.sql.SQLNonTransientConnectionException: No operations allowed after connection closed.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:102)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:81)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:55)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:65)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1692)
+	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1589)
+	at org.example.DAO.UserDAOImpl.registerUser(UserDAOImpl.java:64)
+	at UserDAOImplTest.testRegisterUser_SQLException(UserDAOImplTest.java:61)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.junit.platform.commons.util.ReflectionUtils.invokeMethod(ReflectionUtils.java:765)
+	at org.junit.jupiter.engine.execution.MethodInvocation.proceed(MethodInvocation.java:60)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$ValidatingInvocation.proceed(InvocationInterceptorChain.java:131)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.intercept(TimeoutExtension.java:156)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestableMethod(TimeoutExtension.java:147)
+	at org.junit.jupiter.engine.extension.TimeoutExtension.interceptTestMethod(TimeoutExtension.java:86)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker$ReflectiveInterceptorCall.lambda$ofVoidMethod$0(InterceptingExecutableInvoker.java:103)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.lambda$invoke$0(InterceptingExecutableInvoker.java:93)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain$InterceptedInvocation.proceed(InvocationInterceptorChain.java:106)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.proceed(InvocationInterceptorChain.java:64)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.chainAndInvoke(InvocationInterceptorChain.java:45)
+	at org.junit.jupiter.engine.execution.InvocationInterceptorChain.invoke(InvocationInterceptorChain.java:37)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:92)
+	at org.junit.jupiter.engine.execution.InterceptingExecutableInvoker.invoke(InterceptingExecutableInvoker.java:86)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.lambda$invokeTestMethod$7(TestMethodTestDescriptor.java:218)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.invokeTestMethod(TestMethodTestDescriptor.java:214)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:139)
+	at org.junit.jupiter.engine.descriptor.TestMethodTestDescriptor.execute(TestMethodTestDescriptor.java:69)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:151)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.invokeAll(SameThreadHierarchicalTestExecutorService.java:41)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$6(NodeTestTask.java:155)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$8(NodeTestTask.java:141)
+	at org.junit.platform.engine.support.hierarchical.Node.around(Node.java:137)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.lambda$executeRecursively$9(NodeTestTask.java:139)
+	at org.junit.platform.engine.support.hierarchical.ThrowableCollector.execute(ThrowableCollector.java:73)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.executeRecursively(NodeTestTask.java:138)
+	at org.junit.platform.engine.support.hierarchical.NodeTestTask.execute(NodeTestTask.java:95)
+	at org.junit.platform.engine.support.hierarchical.SameThreadHierarchicalTestExecutorService.submit(SameThreadHierarchicalTestExecutorService.java:35)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestExecutor.execute(HierarchicalTestExecutor.java:57)
+	at org.junit.platform.engine.support.hierarchical.HierarchicalTestEngine.execute(HierarchicalTestEngine.java:54)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:198)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:169)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:93)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.lambda$execute$0(EngineExecutionOrchestrator.java:58)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.withInterceptedStreams(EngineExecutionOrchestrator.java:141)
+	at org.junit.platform.launcher.core.EngineExecutionOrchestrator.execute(EngineExecutionOrchestrator.java:57)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:103)
+	at org.junit.platform.launcher.core.DefaultLauncher.execute(DefaultLauncher.java:85)
+	at org.junit.platform.launcher.core.DelegatingLauncher.execute(DelegatingLauncher.java:47)
+	at org.junit.platform.launcher.core.SessionPerRequestLauncher.execute(SessionPerRequestLauncher.java:63)
+	at com.intellij.junit5.JUnit5IdeaTestRunner.startRunnerWithArgs(JUnit5IdeaTestRunner.java:57)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38)
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11)
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35)
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232)
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55)
+Caused by: com.mysql.cj.exceptions.ConnectionIsClosedException: No operations allowed after connection closed.
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:52)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:95)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:140)
+	at com.mysql.cj.NativeSession.checkClosed(NativeSession.java:915)
+	at com.mysql.cj.jdbc.ConnectionImpl.checkClosed(ConnectionImpl.java:586)
+	at com.mysql.cj.jdbc.ConnectionImpl.prepareStatement(ConnectionImpl.java:1604)
+	... 71 common frames omitted
+2024-07-08 22:43:11 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: newUser
+2024-07-08 22:43:11 INFO  org.example.DAO.UserDAOImpl - User found: newUser
+2024-07-08 22:44:28 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: newUser1
+2024-07-08 22:44:28 WARN  org.example.DAO.UserDAOImpl - No user found with username: newUser1
+2024-07-08 22:45:01 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-08 22:45:01 WARN  org.example.DAO.UserDAOImpl - No user found with username: tm_raj
+2024-07-08 22:45:37 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: newUser
+2024-07-08 22:45:37 INFO  org.example.DAO.UserDAOImpl - User found: newUser
+2024-07-08 22:46:50 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: newUser
+2024-07-08 22:46:50 INFO  org.example.DAO.UserDAOImpl - User found: newUser
+2024-07-09 21:32:03 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-09 21:32:03 INFO  org.example.DAO.UserDAOImpl - User found: tm_raj
+2024-07-09 21:33:00 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: nonExistingUser
+2024-07-09 21:33:00 WARN  org.example.DAO.UserDAOImpl - No user found with username: nonExistingUser
+2024-07-09 21:35:29 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-09 21:35:29 WARN  org.example.DAO.UserDAOImpl - No user found with username: tm_raj
+2024-07-09 21:41:44 INFO  org.example.DAO.UserDAOImpl - Attempting to register user with username: TestUser
+2024-07-09 21:41:44 INFO  org.example.DAO.UserDAOImpl - Rows inserted: 1
+2024-07-09 21:47:21 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: admin
+2024-07-09 21:47:21 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-09 21:48:00 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: admin2
+2024-07-09 21:48:00 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-09 21:48:23 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: 
+2024-07-09 21:48:23 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-09 22:15:16 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all clients
+2024-07-09 22:15:16 INFO  org.example.DAO.UserDAOImpl - Number of clients retrieved: 4
+2024-07-09 22:16:50 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all clients
+2024-07-09 22:16:50 INFO  org.example.DAO.UserDAOImpl - Number of clients retrieved: 4
+2024-07-09 22:17:11 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all clients
+2024-07-09 22:17:11 INFO  org.example.DAO.UserDAOImpl - Number of clients retrieved: 4
+2024-07-09 22:17:35 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all clients
+2024-07-09 22:17:35 INFO  org.example.DAO.UserDAOImpl - Number of clients retrieved: 4
+2024-07-09 22:18:02 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-09 22:18:02 INFO  org.example.DAO.UserDAOImpl - User found: tm_raj
+2024-07-09 22:23:02 INFO  org.example.DAO.UserDAOImpl - Attempting to create a new milestone with name: Milestone Test
+2024-07-09 22:23:02 INFO  org.example.DAO.UserDAOImpl - Milestone creation status: successful
+2024-07-09 22:27:54 INFO  org.example.DAO.UserDAOImpl - Attempting to create a new milestone with name: Milestone Test
+2024-07-09 22:27:54 INFO  org.example.DAO.UserDAOImpl - Milestone creation status: successful
+2024-07-09 22:32:25 INFO  org.example.Main - Program Streated..
+2024-07-09 22:32:26 INFO  org.example.Main - Call the Service Class..
+2024-07-09 22:32:36 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-09 22:32:37 INFO  org.example.DAO.UserDAOImpl - User found: tm_raj
+2024-07-09 22:52:09 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all milestones
+2024-07-09 22:52:09 INFO  org.example.DAO.UserDAOImpl - Number of milestones retrieved: 8
+2024-07-09 22:52:29 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all milestones
+2024-07-09 22:52:29 INFO  org.example.DAO.UserDAOImpl - Number of milestones retrieved: 8
+2024-07-09 23:05:05 INFO  org.example.Main - Program Streated..
+2024-07-09 23:05:06 INFO  org.example.Main - Call the Service Class..
+2024-07-09 23:05:13 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: admin
+2024-07-09 23:05:13 INFO  org.example.DAO.UserDAOImpl - User found: admin
+2024-07-09 23:05:17 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: TeamMember
+2024-07-09 23:05:17 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-10 09:02:31 INFO  org.example.Main - Program Streated..
+2024-07-10 09:02:33 INFO  org.example.Main - Call the Service Class..
+2024-07-10 09:04:51 INFO  org.example.Main - Program Streated..
+2024-07-10 09:04:52 INFO  org.example.Main - Call the Service Class..
+2024-07-10 09:05:02 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: pm_ram
+2024-07-10 09:05:02 INFO  org.example.DAO.UserDAOImpl - User found: pm_ram
+2024-07-10 09:05:36 INFO  org.example.Main - Program Streated..
+2024-07-10 09:05:37 INFO  org.example.Main - Call the Service Class..
+2024-07-10 09:05:47 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: pm_ram
+2024-07-10 09:05:47 INFO  org.example.DAO.UserDAOImpl - User found: pm_ram
+2024-07-10 09:06:47 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: TeamMember
+2024-07-10 09:06:47 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-10 09:06:47 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve projects for user with username: pm_ram
+2024-07-10 09:06:47 INFO  org.example.DAO.UserDAOImpl - Number of projects retrieved for user 'pm_ram': 0
+2024-07-10 09:09:23 INFO  org.example.Main - Program Streated..
+2024-07-10 09:09:24 INFO  org.example.Main - Call the Service Class..
+2024-07-10 09:09:39 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: pm_ram
+2024-07-10 09:09:39 INFO  org.example.DAO.UserDAOImpl - User found: pm_ram
+2024-07-10 09:09:44 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all clients
+2024-07-10 09:09:45 INFO  org.example.DAO.UserDAOImpl - Number of clients retrieved: 5
+2024-07-10 09:11:08 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: TeamMember
+2024-07-10 09:11:08 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-10 09:11:08 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve projects for user with username: pm_ram
+2024-07-10 09:11:08 INFO  org.example.DAO.UserDAOImpl - Number of projects retrieved for user 'pm_ram': 1
+2024-07-10 09:11:34 INFO  org.example.DAO.UserDAOImpl - Attempting to assign project 13 to user 17 by project manager 14
+2024-07-10 09:11:34 INFO  org.example.DAO.UserDAOImpl - Project assignment successful, rows affected: 1
+2024-07-10 09:12:43 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: TestUser
+2024-07-10 09:12:44 WARN  org.example.DAO.UserDAOImpl - No user found with username: TestUser
+2024-07-10 09:13:39 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: Test User
+2024-07-10 09:13:39 WARN  org.example.DAO.UserDAOImpl - No user found with username: Test User
+2024-07-10 09:14:01 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: TestUser
+2024-07-10 09:14:01 INFO  org.example.DAO.UserDAOImpl - User found: TestUser
+2024-07-10 09:16:47 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-10 09:16:47 INFO  org.example.DAO.UserDAOImpl - User found: tm_raj
+2024-07-10 09:17:42 INFO  org.example.Main - Program Streated..
+2024-07-10 09:17:43 INFO  org.example.Main - Call the Service Class..
+2024-07-10 09:18:37 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: pm_ram
+2024-07-10 09:18:37 INFO  org.example.DAO.UserDAOImpl - User found: pm_ram
+2024-07-10 09:18:43 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve projects for user with username: pm_ram
+2024-07-10 09:18:43 INFO  org.example.DAO.UserDAOImpl - Number of projects retrieved for user 'pm_ram': 1
+2024-07-10 09:18:59 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all milestones
+2024-07-10 09:18:59 INFO  org.example.DAO.UserDAOImpl - Number of milestones retrieved: 8
+2024-07-11 09:15:51 INFO  org.example.Main - Program Streated..
+2024-07-11 09:15:53 INFO  org.example.Main - Call the Service Class..
+2024-07-11 09:16:52 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: admin
+2024-07-11 09:16:52 INFO  org.example.DAO.UserDAOImpl - User found: admin
+2024-07-11 09:17:45 INFO  org.example.DAO.UserDAOImpl - Attempting to register user with username: tm_prakash
+2024-07-11 09:17:45 INFO  org.example.DAO.UserDAOImpl - Rows inserted: 1
+2024-07-11 09:18:07 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: TeamMember
+2024-07-11 09:18:07 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-11 09:18:07 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: Admin
+2024-07-11 09:18:07 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-11 09:20:27 INFO  org.example.DAO.UserDAOImpl - Attempting to update access level for user with username: tm_prakash
+2024-07-11 09:20:28 INFO  org.example.DAO.UserDAOImpl - Access level for user 'tm_prakash' changed successfully.
+2024-07-11 09:23:57 INFO  org.example.Main - Program Streated..
+2024-07-11 09:23:59 INFO  org.example.Main - Call the Service Class..
+2024-07-11 09:24:05 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: admin
+2024-07-11 09:24:05 INFO  org.example.DAO.UserDAOImpl - User found: admin
+2024-07-11 09:24:11 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: TeamMember
+2024-07-11 09:24:11 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-11 09:24:11 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: Admin
+2024-07-11 09:24:11 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-11 11:22:41 INFO  org.example.Main - Program Streated..
+2024-07-11 11:22:42 INFO  org.example.Main - Call the Service Class..
+2024-07-11 11:23:41 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: admin
+2024-07-11 11:23:41 INFO  org.example.DAO.UserDAOImpl - User found: admin
+2024-07-11 11:23:45 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: TeamMember
+2024-07-11 11:23:45 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-11 11:23:45 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: ProjectManager
+2024-07-11 11:23:45 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-11 11:24:42 INFO  org.example.DAO.UserDAOImpl - Attempting to update user with username: pm_sam
+2024-07-11 11:24:42 INFO  org.example.DAO.UserDAOImpl - User 'pm_sam' updated successfully.
+2024-07-11 11:25:07 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: TeamMember
+2024-07-11 11:25:07 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-11 11:25:07 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: ProjectManager
+2024-07-11 11:25:07 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-11 11:26:12 INFO  org.example.Main - Program Streated..
+2024-07-11 11:26:12 INFO  org.example.Main - Call the Service Class..
+2024-07-11 11:26:18 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: admin
+2024-07-11 11:26:18 INFO  org.example.DAO.UserDAOImpl - User found: admin
+2024-07-11 11:26:21 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: TeamMember
+2024-07-11 11:26:21 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-11 11:26:21 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: ProjectManager
+2024-07-11 11:26:21 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-11 17:35:53 INFO  org.example.Main - Program Streated..
+2024-07-11 17:35:55 INFO  org.example.Main - Call the Service Class..
+2024-07-11 17:36:28 INFO  org.example.DAO.UserDAOImpl - Attempting to register user with username: sampleuser
+2024-07-11 17:36:28 INFO  org.example.DAO.UserDAOImpl - Rows inserted: 1
+2024-07-11 17:36:42 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: sampleuser
+2024-07-11 17:36:42 INFO  org.example.DAO.UserDAOImpl - User found: sampleuser
+2024-07-11 17:37:36 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: pm_john
+2024-07-11 17:37:36 INFO  org.example.DAO.UserDAOImpl - User found: pm_john
+2024-07-11 17:39:39 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all clients
+2024-07-11 17:39:39 INFO  org.example.DAO.UserDAOImpl - Number of clients retrieved: 6
+2024-07-11 17:40:48 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: TeamMember
+2024-07-11 17:40:48 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-11 17:40:48 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve projects for user with username: pm_john
+2024-07-11 17:40:48 INFO  org.example.DAO.UserDAOImpl - Number of projects retrieved for user 'pm_john': 2
+2024-07-11 17:41:30 INFO  org.example.DAO.UserDAOImpl - Attempting to assign project 14 to user 19 by project manager 2
+2024-07-11 17:41:30 INFO  org.example.DAO.UserDAOImpl - Project assignment successful, rows affected: 1
+2024-07-11 17:41:47 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve projects for user with username: pm_john
+2024-07-11 17:41:47 INFO  org.example.DAO.UserDAOImpl - Number of projects retrieved for user 'pm_john': 2
+2024-07-11 17:41:54 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all milestones
+2024-07-11 17:41:54 INFO  org.example.DAO.UserDAOImpl - Number of milestones retrieved: 8
+2024-07-11 17:42:39 INFO  org.example.Main - Program Streated..
+2024-07-11 17:42:40 INFO  org.example.Main - Call the Service Class..
+2024-07-11 17:42:57 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: pm_john
+2024-07-11 17:42:57 INFO  org.example.DAO.UserDAOImpl - User found: pm_john
+2024-07-11 17:43:01 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve projects for user with username: pm_john
+2024-07-11 17:43:01 INFO  org.example.DAO.UserDAOImpl - Number of projects retrieved for user 'pm_john': 2
+2024-07-11 17:43:08 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all milestones
+2024-07-11 17:43:08 INFO  org.example.DAO.UserDAOImpl - Number of milestones retrieved: 8
+2024-07-11 17:45:04 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve projects for user with username: pm_john
+2024-07-11 17:45:04 INFO  org.example.DAO.UserDAOImpl - Number of projects retrieved for user 'pm_john': 2
+2024-07-11 17:45:16 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all milestones
+2024-07-11 17:45:16 INFO  org.example.DAO.UserDAOImpl - Number of milestones retrieved: 8
+2024-07-11 21:03:20 INFO  org.example.Main - Program Streated..
+2024-07-11 21:03:21 INFO  org.example.Main - Call the Service Class..
+2024-07-11 21:03:47 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: pm_john
+2024-07-11 21:03:47 INFO  org.example.DAO.UserDAOImpl - User found: pm_john
+2024-07-11 21:03:51 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve projects for user with username: pm_john
+2024-07-11 21:03:51 INFO  org.example.DAO.UserDAOImpl - Number of projects retrieved for user 'pm_john': 2
+2024-07-11 21:05:21 INFO  org.example.Main - Program Streated..
+2024-07-11 21:05:22 INFO  org.example.Main - Call the Service Class..
+2024-07-11 21:05:32 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: pm_john
+2024-07-11 21:05:32 INFO  org.example.DAO.UserDAOImpl - User found: pm_john
+2024-07-11 21:05:35 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve projects for user with username: pm_john
+2024-07-11 21:05:35 INFO  org.example.DAO.UserDAOImpl - Number of projects retrieved for user 'pm_john': 2
+2024-07-11 21:05:51 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all milestones
+2024-07-11 21:05:51 INFO  org.example.DAO.UserDAOImpl - Number of milestones retrieved: 8
+2024-07-12 13:50:04 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all milestones
+2024-07-12 13:50:04 INFO  org.example.DAO.UserDAOImpl - Number of milestones retrieved: 8
+2024-07-12 13:50:04 INFO  org.example.DAO.UserDAOImpl - Attempting to register user with username: TestUser
+2024-07-12 13:50:04 INFO  org.example.DAO.UserDAOImpl - Rows inserted: 1
+2024-07-12 13:50:04 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-12 13:50:05 INFO  org.example.DAO.UserDAOImpl - User found: tm_raj
+2024-07-12 13:50:05 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: nonExistingUser
+2024-07-12 13:50:05 WARN  org.example.DAO.UserDAOImpl - No user found with username: nonExistingUser
+2024-07-12 13:50:06 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: admin
+2024-07-12 13:50:06 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-12 13:50:06 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all clients
+2024-07-12 13:50:06 INFO  org.example.DAO.UserDAOImpl - Number of clients retrieved: 6
+2024-07-12 13:50:06 INFO  org.example.DAO.UserDAOImpl - Attempting to create a new milestone with name: Milestone Test
+2024-07-12 13:50:06 INFO  org.example.DAO.UserDAOImpl - Milestone creation status: successful
+2024-07-12 13:50:44 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-12 13:50:44 INFO  org.example.DAO.UserDAOImpl - User found: tm_raj
+2024-07-12 13:54:09 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all milestones
+2024-07-12 13:54:09 INFO  org.example.DAO.UserDAOImpl - Number of milestones retrieved: 9
+2024-07-12 13:54:10 INFO  org.example.DAO.UserDAOImpl - Attempting to register user with username: TestUser
+2024-07-12 13:54:10 INFO  org.example.DAO.UserDAOImpl - Rows inserted: 1
+2024-07-12 13:54:10 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-12 13:54:10 INFO  org.example.DAO.UserDAOImpl - User found: tm_raj
+2024-07-12 13:54:10 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: nonExistingUser
+2024-07-12 13:54:10 WARN  org.example.DAO.UserDAOImpl - No user found with username: nonExistingUser
+2024-07-12 13:54:11 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: admin
+2024-07-12 13:54:11 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-12 13:54:11 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all clients
+2024-07-12 13:54:11 INFO  org.example.DAO.UserDAOImpl - Number of clients retrieved: 6
+2024-07-12 13:54:11 INFO  org.example.DAO.UserDAOImpl - Attempting to create a new milestone with name: Milestone Test
+2024-07-12 13:54:11 INFO  org.example.DAO.UserDAOImpl - Milestone creation status: successful
+2024-07-12 13:55:04 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all milestones
+2024-07-12 13:55:04 INFO  org.example.DAO.UserDAOImpl - Number of milestones retrieved: 10
+2024-07-12 13:55:04 INFO  org.example.DAO.UserDAOImpl - Attempting to register user with username: TestUser
+2024-07-12 13:55:04 INFO  org.example.DAO.UserDAOImpl - Rows inserted: 1
+2024-07-12 13:55:04 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-12 13:55:04 INFO  org.example.DAO.UserDAOImpl - User found: tm_raj
+2024-07-12 13:55:04 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: nonExistingUser
+2024-07-12 13:55:04 WARN  org.example.DAO.UserDAOImpl - No user found with username: nonExistingUser
+2024-07-12 13:55:04 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: admin
+2024-07-12 13:55:04 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-12 13:55:05 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all clients
+2024-07-12 13:55:05 INFO  org.example.DAO.UserDAOImpl - Number of clients retrieved: 6
+2024-07-12 13:55:05 INFO  org.example.DAO.UserDAOImpl - Attempting to create a new milestone with name: Milestone Test
+2024-07-12 13:55:05 INFO  org.example.DAO.UserDAOImpl - Milestone creation status: successful
+2024-07-12 14:03:02 INFO  org.example.Main - Program Streated..
+2024-07-12 14:03:03 INFO  org.example.Main - Call the Service Class..
+2024-07-12 14:03:13 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-12 14:03:14 INFO  org.example.DAO.UserDAOImpl - User found: tm_raj
+2024-07-12 16:57:05 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: ProjectManager
+2024-07-12 16:57:05 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-12 17:47:15 INFO  org.example.Main - Program Streated..
+2024-07-12 17:47:17 INFO  org.example.Main - Call the Service Class..
+2024-07-12 17:47:31 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-12 17:47:31 INFO  org.example.DAO.UserDAOImpl - User found: tm_raj
+2024-07-12 17:54:45 INFO  org.example.Main - Program Streated..
+2024-07-12 17:54:46 INFO  org.example.Main - Call the Service Class..
+2024-07-12 17:54:59 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-12 17:54:59 INFO  org.example.DAO.UserDAOImpl - User found: tm_raj
+2024-07-12 17:55:45 INFO  org.example.DAO.UserDAOImpl - Attempting to update task status and user activity for user with username: tm_raj
+2024-07-12 17:55:45 INFO  org.example.DAO.UserDAOImpl - Number of tasks updated: 1
+2024-07-12 17:55:45 INFO  org.example.DAO.UserDAOImpl - Number of user activities updated: 1
+2024-07-12 17:56:04 INFO  org.example.Main - Program Streated..
+2024-07-12 17:56:05 INFO  org.example.Main - Call the Service Class..
+2024-07-12 17:56:25 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: pm_john
+2024-07-12 17:56:25 INFO  org.example.DAO.UserDAOImpl - User found: pm_john
+2024-07-12 17:56:32 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: TeamMember
+2024-07-12 17:56:32 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-12 17:58:02 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve usernames with role: TeamMember
+2024-07-12 17:58:02 INFO  org.example.DAO.UserDAOImpl - Query executed successfully.
+2024-07-12 17:58:02 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve projects for user with username: pm_john
+2024-07-12 17:58:02 INFO  org.example.DAO.UserDAOImpl - Number of projects retrieved for user 'pm_john': 2
+2024-07-12 17:58:19 INFO  org.example.DAO.UserDAOImpl - Attempting to assign project 14 to user 16 by project manager 2
+2024-07-12 17:58:20 INFO  org.example.DAO.UserDAOImpl - Project assignment successful, rows affected: 1
+2024-07-12 17:58:27 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve projects for user with username: pm_john
+2024-07-12 17:58:27 INFO  org.example.DAO.UserDAOImpl - Number of projects retrieved for user 'pm_john': 2
+2024-07-12 17:58:38 INFO  org.example.DAO.UserDAOImpl - Attempting to retrieve all milestones
+2024-07-12 17:58:38 INFO  org.example.DAO.UserDAOImpl - Number of milestones retrieved: 11
+2024-07-12 17:59:29 INFO  org.example.DAO.UserDAOImpl - Attempting to log in user with username: tm_raj
+2024-07-12 17:59:29 INFO  org.example.DAO.UserDAOImpl - User found: tm_raj
